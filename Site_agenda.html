@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agenda Técnica</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 25px;
+        }
+
+        .menu {
+            width: 100%;
+            max-width: 420px;
+
+            display: flex;
+            flex-direction: column;
+
+            gap: 28px;
+        }
+
+        .botao {
+            width: 100%;
+
+            padding: 24px 20px;
+
+            background: linear-gradient(
+                135deg,
+                #0b4ee8,
+                #003bbf
+            );
+
+            color: white;
+
+            font-size: 20px;
+            font-weight: bold;
+
+            border-radius: 20px;
+
+            border: 5px solid #0b4edb;
+
+            box-shadow:
+                inset 0 0 0 4px white,
+                0 4px 12px rgba(0, 70, 200, 0.15);
+
+            cursor: pointer;
+
+            transition: 0.2s;
+        }
+
+        .botao:active {
+            transform: scale(0.97);
+        }
+
+        @media (max-width: 480px) {
+            .menu {
+                max-width: 100%;
+            }
+
+            .botao {
+                font-size: 18px;
+                padding: 22px 15px;
+            }
+        }
+    </style>
+</head>
+
+<div class="menu">
+
+    <a href="Cadastro.html">
+        <button class="botao">
+            Cadastrar cliente
+        </button>
+    </a>
+
+    <a href="clientes.html">
+        <button class="botao">
+            Ver clientes
+        </button>
+    </a>
+
+    <a href="agenda.html">
+        <button class="botao">
+            Ver agenda
+        </button>
+    </a>
+
+</div>
+
+</body>
+</html>

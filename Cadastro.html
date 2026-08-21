@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastrar Cliente</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+
+            margin: 0;
+
+            background: white;
+
+            padding: 25px;
+        }
+
+        .container {
+
+            max-width: 450px;
+
+            margin: auto;
+        }
+
+        h2 {
+
+            text-align: center;
+
+            color: #003bbf;
+
+            margin-bottom: 30px;
+        }
+
+        input,
+        textarea {
+
+            width: 100%;
+
+            padding: 15px;
+
+            margin-bottom: 15px;
+
+            border-radius: 12px;
+
+            border: 1px solid #ccc;
+
+            font-size: 16px;
+        }
+
+        textarea {
+
+            min-height: 100px;
+
+            resize: vertical;
+        }
+
+        .data {
+
+            display: flex;
+
+            gap: 10px;
+        }
+
+        button {
+
+            width: 100%;
+
+            padding: 18px;
+
+            background: #064bd8;
+
+            color: white;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            border-radius: 15px;
+
+            border: 4px solid #064bd8;
+
+            box-shadow:
+                inset 0 0 0 3px white;
+
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Cadastrar cliente</h2>
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="cliente"
+            placeholder="Nome do cliente"
+            required>
+
+        <input
+            type="tel"
+            name="telefone"
+            placeholder="Número de contato"
+            required>
+
+        <input
+            type="text"
+            name="endereco"
+            placeholder="Endereço">
+
+        <input
+            type="text"
+            name="aparelho"
+            placeholder="Aparelho"
+            required>
+
+        <div class="data">
+
+            <input
+                type="number"
+                name="dia"
+                placeholder="Dia"
+                required>
+
+            <input
+                type="number"
+                name="mes"
+                placeholder="Mês"
+                required>
+
+            <input
+                type="number"
+                name="ano"
+                placeholder="Ano"
+                required>
+
+        </div>
+
+        <textarea
+            name="observacao"
+            placeholder="Observação"></textarea>
+
+        <button type="submit">
+            Cadastrar cliente
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
